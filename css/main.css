@@ -1,1 +1,49 @@
 /* i'll probably style the page once it starts working */
+/*change of heart: i'm doing it now (nothing works)*/
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    padding: 1rem .3rem;
+    flex-basis: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .5rem;
+    min-height: 10rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
+    height: 4rem;
+}
+
+button {
+    transition-duration: 500ms;
+    flex-grow: 2; 
+    background: #fff;
+    border-style: solid;
+    border-color: burlywood;
+    font-size: 200%;
+}
+
+button:focus {
+    transition-duration: 500ms;
+    flex-grow: 3;
+    border-color: rgb(0, 141, 0);
+    background: rgb(164, 221, 164);
+}

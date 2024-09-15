@@ -9,23 +9,27 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Calculater</h1>
-    <h2>Get it? Because i will write it later.
-    </h2>
-    <br>
-    <form action="" id="calculater">
-        <h3>Jokes aside, do something: </h3>
-        <label for="a">Some number</label>
-        <input type="text" id="a" name="aInput">
-        <label for="b">Other number</label>
-        <input type="text" id="b" name="bInput">
-        <br>
-    </form>
-    <div class="buttons">
-        <button>+</button><button>-</button><button>/</button><button>*</button>
-    </div>
-    <div class="output" >
-        <span id="outputSpan">Do something first</span>
+    <div class="container">
+        <header class="header">
+            <h1>Calculater</h1>
+            <h2>Get it? Because i will write it later.
+            </h2>
+        </header>
+        <main class="main">
+            <form action="" id="calculater" class="calculater">
+                <h3>Jokes aside, do something: </h3>
+                <label for="a">Some number</label>
+                <input type="text" id="a" name="aInput">
+                <label for="b">Other number</label>
+                <input type="text" id="b" name="bInput">
+            </form>
+            <div class="buttons">
+                <button>+</button><button>-</button><button>/</button><button>*</button>
+            </div>
+            <div class="output" >
+                <span id="outputSpan">Do something first</span>
+            </div>
+        </main>
     </div>
 </body>
 </html>
