@@ -32,7 +32,30 @@ body {
     height: 4rem;
 }
 
+.calculater {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .4rem;
+    transition-duration: 400ms;
+    padding: 1rem .3rem;
+    border-style: solid;
+    border-color: burlywood;
+    background-color: #fff;
+    max-height: 6rem;
+}
+
+.calculater:focus-within {
+    transition-duration: 400ms;
+    border-color: rgb(0, 141, 0);
+    background: rgb(164, 221, 164);
+    height: 10rem; /*fix this xd*/
+    max-height: 10rem;
+}
+
 button {
+    position: relative;
+    top: 0;
     transition-duration: 500ms;
     flex-grow: 2; 
     background: #fff;
@@ -46,4 +69,5 @@ button:focus {
     flex-grow: 3;
     border-color: rgb(0, 141, 0);
     background: rgb(164, 221, 164);
+    top: 30px;
 }
